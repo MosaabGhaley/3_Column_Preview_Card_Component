@@ -1,0 +1,145 @@
+/* Start Global Rules */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/* End Global Rules */
+
+.component {
+    width: 900px;
+    height: 500px;
+    margin: 200px auto 30px;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    border-radius: 10px;
+    display: flex;
+}
+
+.component div[class*="card"] {
+    width: calc(100% / 3);
+}
+
+.component .sedan-card {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.component .suv-card {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.component .luxury-card {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.component .container {
+    padding: 50px;
+    padding-right: 40px;
+    height: 500px;
+}
+
+.component .container h3 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 30px 0;
+}
+
+.component .container p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.component .container button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 63px;
+}
+
+.component .sedan-card button {
+    color: hsl(31, 77%, 52%);
+}
+
+.component .sedan-card button:hover {
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.component .suv-card button {
+    color: hsl(184, 100%, 22%);
+}
+
+.component .suv-card button:hover {
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    cursor: pointer;
+}
+
+.component .luxury-card button {
+    color: hsl(179, 100%, 13%);
+}
+
+.component .luxury-card button:hover {
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:375px) {
+    .component {
+        margin: 100px auto;
+        width: 350px;
+        height: 1350px;
+        flex-direction: column;
+    }
+
+    .component div[class*="card"] {
+        width: 100%;
+    }
+
+    .component .sedan-card {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .component .luxury-card {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .component .container {
+        height: calc(1350px / 3);
+    }
+
+    .component .container p {
+        width: 240px;
+        font-size: 16px;
+    }
+
+    .component .container button {
+        margin-top: 10px;
+    }
+}
